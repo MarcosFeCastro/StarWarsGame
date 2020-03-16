@@ -10,8 +10,6 @@ export class SwapiService {
 
   constructor( private http: HttpClient ) { }
 
-  total: 61;
-
   getPlanet( id: number ) {
     return this.http.get<any>(`${environment.swapi_url}planets/${id}/`)
   }
